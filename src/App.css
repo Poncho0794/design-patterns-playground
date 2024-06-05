@@ -3,3 +3,11 @@
   width: 100%;
   justify-content: center;
 }
+
+.MuiGrid-root {
+  padding: 16px;
+}
+
+.nav-container {
+  padding: 0;
+}

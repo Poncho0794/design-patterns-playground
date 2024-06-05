@@ -1,13 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import "./App.css";
-import { TestFactory } from "./components/test-factory";
+import './App.css';
+import { Link, Outlet } from 'react-router-dom';
+import { Grid } from '@mui/material';
 interface Props {}
+
 const App: React.FC<Props> = () => {
   return (
-    <>
-      <TestFactory />
-    </>
+    <Grid container direction="column">
+      <Grid container direction="row" className="nav-container">
+        <Grid item md={2}>
+          <Link to="/factory">Factory Method</Link>
+        </Grid>
+        <Grid item md={2}>
+          <Link to="/abstract-factory">Abstract Factory</Link>
+        </Grid>
+      </Grid>
+      <Outlet />
+    </Grid>
   );
 };
 

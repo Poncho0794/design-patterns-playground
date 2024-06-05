@@ -32,7 +32,7 @@ export const TestFactory = () => {
   };
   return (
     <Grid container alignItems="center" justifyContent="center">
-      <Grid item xs={8}>
+      <Grid item xs={12}>
         <h1>Where to Go?</h1>
         <FormControl fullWidth>
           <InputLabel id="place-select-label">Places</InputLabel>
