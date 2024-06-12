@@ -15,6 +15,9 @@ const App: React.FC<Props> = () => {
         <Grid item md={2}>
           <Link to="/abstract-factory">Abstract Factory</Link>
         </Grid>
+        <Grid item md={2}>
+          <Link to="/singleton">Singleton</Link>
+        </Grid>
       </Grid>
       <Outlet />
     </Grid>

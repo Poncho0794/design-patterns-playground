@@ -5,6 +5,7 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { TestAbstractFactory } from './components/test-abstract-factory/index.tsx';
 import { TestFactory } from './components/test-factory/index.tsx';
+import { TestSingleton } from './components/test-singleton/index.tsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/abstract-factory',
         element: <TestAbstractFactory />,
+      },
+      {
+        path: '/singleton',
+        element: <TestSingleton />,
       },
     ],
   },
